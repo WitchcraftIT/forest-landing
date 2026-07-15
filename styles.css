@@ -3,3 +3,9 @@
 @media(max-width:560px){.section{padding:95px 0}.header-inner{min-height:76px}.mobile-menu{top:76px}.brand strong{font-size:11px}.brand small{font-size:8px}.hero,.hero-grid{min-height:680px}.hero-grid{padding-bottom:65px}.hero-actions{align-items:flex-start;flex-direction:column;gap:22px}.hero-bottom{display:none}.ticker div{gap:25px;font-size:9px}.section-top h2,.statement h2,.principles h2,.process h2,.contact-section h2{font-size:54px}.project-feature .project-image{min-height:350px}.project-info h3{font-size:25px}.principles-grid{grid-template-columns:1fr}.principles-grid article,.principles-grid article:not(:first-child){padding:23px 0;border-right:0;border-bottom:1px solid #c9c9be;min-height:0}.principles-grid article:last-child{border-bottom:0}.principles-grid h3{margin:22px 0 12px}.contact-direct{flex-direction:column;gap:10px}.modal-dialog{padding:35px 24px}.modal-dialog h2{font-size:37px}.footer-links{order:3;width:100%}}
 /* Keep the first screen readable before scroll observers initialize. */
 .hero .reveal{opacity:1;transform:none}
+/* Prevent the featured project and the bottom CTA from sharing the same grid space. */
+.project-grid{grid-template-rows:repeat(2,auto);row-gap:34px;align-items:start}
+.project-feature{grid-row:1 / span 2}
+.project-feature .project-image{height:auto;min-height:0;aspect-ratio:1.28}
+.projects-note{position:relative;z-index:2;clear:both;margin-top:52px;background:var(--paper)}
+@media(max-width:900px){.project-grid{grid-template-rows:none;row-gap:20px}.project-feature{grid-row:auto}.project-feature .project-image{min-height:350px}}
