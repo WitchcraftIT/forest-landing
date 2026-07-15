@@ -16,3 +16,5 @@
 .projects-note{display:flex;clear:none;margin-top:62px}
 @media(max-width:900px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.project-feature{grid-row:auto}}
 @media(max-width:560px){.project-grid{grid-template-columns:1fr}}
+/* The standalone project CTA was removed from the composition. */
+.projects-note{display:none!important}
