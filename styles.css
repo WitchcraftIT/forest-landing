@@ -9,3 +9,10 @@
 .project-feature .project-image{height:auto;min-height:0;aspect-ratio:1.28}
 .projects-note{position:relative;z-index:2;clear:both;margin-top:52px;background:var(--paper)}
 @media(max-width:900px){.project-grid{grid-template-rows:none;row-gap:20px}.project-feature{grid-row:auto}.project-feature .project-image{min-height:350px}}
+/* Use independent project cards so the CTA can never overlap a featured card. */
+.project-grid{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:none;gap:24px}
+.project-feature{grid-row:auto}
+.project-feature .project-image{height:auto;min-height:0;aspect-ratio:1.28}
+.projects-note{display:flex;clear:none;margin-top:62px}
+@media(max-width:900px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.project-feature{grid-row:auto}}
+@media(max-width:560px){.project-grid{grid-template-columns:1fr}}
